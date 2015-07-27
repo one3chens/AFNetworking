@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9A84D48D1A88C1E7008EF006 /* AFNetworkingiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D48C1A88C1E7008EF006 /* AFNetworkingiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9A84D4AD1A88C20D008EF006 /* AFNetworkingOSX.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D4AC1A88C20D008EF006 /* AFNetworkingOSX.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9A84D4D51A88C380008EF006 /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D4C21A88C380008EF006 /* AFHTTPRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9A84D4D61A88C380008EF006 /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A84D4C21A88C380008EF006 /* AFHTTPRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9A84D4D71A88C380008EF006 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A84D4C31A88C380008EF006 /* AFHTTPRequestOperation.m */; };
@@ -67,12 +65,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9A84D4871A88C1E7008EF006 /* AFNetworkingiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworkingiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A84D48B1A88C1E7008EF006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9A84D48C1A88C1E7008EF006 /* AFNetworkingiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNetworkingiOS.h; sourceTree = "<group>"; };
-		9A84D4A81A88C20D008EF006 /* AFNetworkingOSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworkingOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A84D4AB1A88C20D008EF006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9A84D4AC1A88C20D008EF006 /* AFNetworkingOSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNetworkingOSX.h; sourceTree = "<group>"; };
+		75637AA51B66CA1200F3CA6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		9A84D4871A88C1E7008EF006 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A84D4A81A88C20D008EF006 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A84D4C21A88C380008EF006 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		9A84D4C31A88C380008EF006 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		9A84D4C41A88C380008EF006 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -165,6 +160,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75637AA41B66CA0000F3CA6D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75637AA51B66CA1200F3CA6D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		9A84D47D1A88C1E7008EF006 = {
 			isa = PBXGroup;
 			children = (
@@ -174,7 +177,6 @@
 				9A84D5381A88C4D0008EF006 /* Tests */,
 				9A84D4C11A88C380008EF006 /* AFNetworking */,
 				9A84D4891A88C1E7008EF006 /* AFNetworkingiOS */,
-				9A84D4A91A88C20D008EF006 /* AFNetworkingOSX */,
 				9A84D4881A88C1E7008EF006 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -182,8 +184,8 @@
 		9A84D4881A88C1E7008EF006 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9A84D4871A88C1E7008EF006 /* AFNetworkingiOS.framework */,
-				9A84D4A81A88C20D008EF006 /* AFNetworkingOSX.framework */,
+				9A84D4871A88C1E7008EF006 /* AFNetworking.framework */,
+				9A84D4A81A88C20D008EF006 /* AFNetworking.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -192,35 +194,8 @@
 			isa = PBXGroup;
 			children = (
 				9A84D50D1A88C3E3008EF006 /* UIKit+AFNetworking */,
-				9A84D48C1A88C1E7008EF006 /* AFNetworkingiOS.h */,
-				9A84D48A1A88C1E7008EF006 /* Supporting Files */,
 			);
 			path = AFNetworkingiOS;
-			sourceTree = "<group>";
-		};
-		9A84D48A1A88C1E7008EF006 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				9A84D48B1A88C1E7008EF006 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		9A84D4A91A88C20D008EF006 /* AFNetworkingOSX */ = {
-			isa = PBXGroup;
-			children = (
-				9A84D4AC1A88C20D008EF006 /* AFNetworkingOSX.h */,
-				9A84D4AA1A88C20D008EF006 /* Supporting Files */,
-			);
-			path = AFNetworkingOSX;
-			sourceTree = "<group>";
-		};
-		9A84D4AA1A88C20D008EF006 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				9A84D4AB1A88C20D008EF006 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		9A84D4C11A88C380008EF006 /* AFNetworking */ = {
@@ -245,6 +220,7 @@
 				9A84D4D21A88C380008EF006 /* AFURLResponseSerialization.m */,
 				9A84D4D31A88C380008EF006 /* AFURLSessionManager.h */,
 				9A84D4D41A88C380008EF006 /* AFURLSessionManager.m */,
+				75637AA41B66CA0000F3CA6D /* Supporting Files */,
 			);
 			name = AFNetworking;
 			path = ../AFNetworking;
@@ -384,7 +360,6 @@
 				9A84D52F1A88C3E3008EF006 /* UIProgressView+AFNetworking.h in Headers */,
 				9A84D5071A88C380008EF006 /* AFURLSessionManager.h in Headers */,
 				9A84D4FB1A88C380008EF006 /* AFURLRequestSerialization.h in Headers */,
-				9A84D48D1A88C1E7008EF006 /* AFNetworkingiOS.h in Headers */,
 				9A84D4D51A88C380008EF006 /* AFHTTPRequestOperation.h in Headers */,
 				9A84D4E11A88C380008EF006 /* AFHTTPSessionManager.h in Headers */,
 				9A84D5351A88C3E3008EF006 /* UIWebView+AFNetworking.h in Headers */,
@@ -409,7 +384,6 @@
 			files = (
 				9A84D5081A88C380008EF006 /* AFURLSessionManager.h in Headers */,
 				9A84D4FC1A88C380008EF006 /* AFURLRequestSerialization.h in Headers */,
-				9A84D4AD1A88C20D008EF006 /* AFNetworkingOSX.h in Headers */,
 				9A84D4D61A88C380008EF006 /* AFHTTPRequestOperation.h in Headers */,
 				9A84D4E21A88C380008EF006 /* AFHTTPSessionManager.h in Headers */,
 				9A84D4F61A88C380008EF006 /* AFURLConnectionOperation.h in Headers */,
@@ -439,7 +413,7 @@
 			);
 			name = AFNetworkingiOS;
 			productName = AFNetworkingLib;
-			productReference = 9A84D4871A88C1E7008EF006 /* AFNetworkingiOS.framework */;
+			productReference = 9A84D4871A88C1E7008EF006 /* AFNetworking.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9A84D4A71A88C20D008EF006 /* AFNetworkingOSX */ = {
@@ -457,7 +431,7 @@
 			);
 			name = AFNetworkingOSX;
 			productName = AFNetworkingOSX;
-			productReference = 9A84D4A81A88C20D008EF006 /* AFNetworkingOSX.framework */;
+			productReference = 9A84D4A81A88C20D008EF006 /* AFNetworking.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -647,10 +621,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = AFNetworkingiOS/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AFNetworking;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -662,10 +636,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = AFNetworkingiOS/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AFNetworking;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -683,11 +657,11 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = AFNetworkingOSX/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AFNetworking;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
@@ -703,11 +677,11 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = AFNetworkingOSX/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AFNetworking;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};

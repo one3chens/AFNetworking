@@ -41,4 +41,8 @@
     #import "AFHTTPSessionManager.h"
 #endif
 
+#if defined(__IPHONE_OS_VERSION_MIN_REQUIRED)
+    #import "UIKit+AFNetworking.h"
+#endif
+
 #endif /* _AFNETWORKING_ */
